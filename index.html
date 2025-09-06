@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Avenash Vasant — Cloud/DevOps Architect</title>
+  <meta name="description" content="Executive résumé of Avenash Vasant — Cloud & DevOps Architect with 16+ years of experience across AWS, Kubernetes, CI/CD, and cost optimization." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Roboto+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg: #0b1320;
+      --card:#101a2b;
+      --muted:#9fb0c9;
+      --text:#e8eef8;
+      --brand:#6aa1ff;
+      --accent:#56e39f;
+      --ring: 0 0 0 3px rgba(106,161,255,.35);
+    }
+    @media (prefers-color-scheme: light){
+      :root{ --bg:#f6f8fb; --card:#ffffff; --muted:#5c6b82; --text:#0b1320; --brand:#2b66ff; --accent:#1fbf74; }
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;}
+    a{color:var(--brand);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .wrap{max-width:1080px;margin:48px auto;padding:0 20px;}
+    header{
+      display:grid;grid-template-columns:120px 1fr auto;gap:20px;align-items:center;margin-bottom:24px
+    }
+    .avatar{width:120px;height:120px;border-radius:50%;object-fit:cover;border:2px solid rgba(255,255,255,.1);box-shadow:0 6px 24px rgba(0,0,0,.25)}
+    .avatar-holder{position:relative}
+    h1{font-size:28px;margin:0 0 6px 0;letter-spacing:.3px}
+    .role{font-size:16px;color:var(--muted);margin:0}
+    .links{display:flex;flex-wrap:wrap;gap:14px;margin-top:8px}
+    .links a{display:inline-flex;align-items:center;gap:8px;padding:6px 10px;border-radius:10px;background:rgba(255,255,255,.06)}
+    .cta{display:flex;gap:10px;align-items:center}
+    .btn{padding:10px 14px;border-radius:12px;border:1px solid rgba(255,255,255,.15);background:var(--card);color:var(--text);cursor:pointer}
+    .btn.primary{background:linear-gradient(135deg,var(--brand),#7ccaff);color:#fff;border:none}
+    .grid{display:grid;gap:16px;grid-template-columns:repeat(12,1fr)}
+    .col-8{grid-column:span 8}
+    .col-4{grid-column:span 4}
+    .card{background:var(--card);border:1px solid rgba(255,255,255,.06);border-radius:18px;padding:18px;box-shadow:0 10px 30px rgba(0,0,0,.25)}
+    .card h2{font-size:16px;margin:0 0 12px 0;letter-spacing:.4px;text-transform:uppercase;color:var(--muted)}
+    .summary{font-size:15px;line-height:1.7}
+    .tags{display:flex;flex-wrap:wrap;gap:8px}
+    .tag{padding:6px 10px;border-radius:999px;background:rgba(255,255,255,.06);font-size:12px;border:1px solid rgba(255,255,255,.08)}
+    .exp{display:flex;flex-direction:column;gap:14px}
+    .exp-item{padding:14px;border-radius:14px;border:1px dashed rgba(255,255,255,.08)}
+    .exp-head{display:flex;justify-content:space-between;gap:10px;align-items:baseline}
+    .company{font-weight:600}
+    .period{color:var(--muted);font-size:13px}
+    .title{color:var(--text)}
+    ul{margin:8px 0 0 18px;line-height:1.6}
+    li{margin:6px 0}
+    .kpi{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+    .kpi .pill{background:rgba(86,227,159,.1);border:1px solid rgba(86,227,159,.25);padding:10px 12px;border-radius:12px;font-size:13px}
+    footer{margin:26px 0 40px;display:flex;justify-content:center;color:var(--muted);font-size:13px}
+
+    /* Modal */
+    dialog{border:none;border-radius:16px;padding:0;max-width:520px;width:92vw}
+    .modal{padding:18px;background:var(--card);color:var(--text);border-radius:16px;border:1px solid rgba(255,255,255,.1)}
+    .modal h3{margin:0 0 10px 0}
+    .field{display:flex;flex-direction:column;gap:6px;margin:10px 0}
+    input[type="text"]{padding:10px 12px;border-radius:10px;border:1px solid rgba(255,255,255,.15);background:transparent;color:var(--text)}
+    input[type="file"]{border:1px dashed rgba(255,255,255,.25);padding:12px;border-radius:10px}
+    .modal .row{display:flex;gap:10px;justify-content:flex-end;margin-top:10px}
+
+    /* Responsive */
+    @media (max-width:900px){
+      header{grid-template-columns:80px 1fr;grid-auto-rows:auto}
+      .cta{grid-column:1/-1}
+      .grid{grid-template-columns:1fr}
+      .col-8,.col-4{grid-column:1}
+    }
+
+    /* Print */
+    @media print{
+      :root{--bg:#fff;--card:#fff;--text:#000;--muted:#555}
+      header .cta, .edit-photo, .photo-controls{display:none}
+      body{background:#fff}
+      .wrap{margin:0;padding:0}
+      a{text-decoration:none;color:#000}
+      .card{box-shadow:none;border:1px solid #e5e7eb}
+    }
+  
+    /* Top Nav (SPA) */
+    .topnav{display:flex;gap:10px;flex-wrap:wrap;margin:0 0 16px 0}
+    .topnav a{padding:10px 14px;border-radius:12px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.08);color:var(--text)}
+    .topnav a.active{background:linear-gradient(135deg,var(--brand),#7ccaff);color:#fff;border:none;box-shadow:0 6px 18px rgba(43,102,255,.35)}
+    .hidden{display:none}
+    /* Blog styles */
+    .blog-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:16px}
+    .blog-col-8{grid-column:span 8}
+    .blog-col-4{grid-column:span 4}
+    @media(max-width:900px){ .blog-grid{grid-template-columns:1fr} .blog-col-8,.blog-col-4{grid-column:1} }
+    .post{background:var(--card);border:1px solid rgba(255,255,255,.06);border-radius:18px;padding:18px;box-shadow:0 10px 30px rgba(0,0,0,.25);display:flex;flex-direction:column;gap:10px}
+    .post h3{margin:0}
+    .meta{font-size:12px;color:var(--muted)}
+    .post .tags{gap:6px}
+    .chip{padding:4px 8px;border-radius:999px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.08);font-size:11px}
+
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="avatar-holder">
+        <img id="avatar" class="avatar" alt="Profile photo" src=""/>
+      </div>
+      <div>
+        <h1 id="name">Avenash Vasant</h1>
+        <p class="role" id="role">Cloud & DevOps • Senior Solutions Architect</p>
+        <div class="links">
+          <a id="email" href="mailto:vavenash@gmail.com" aria-label="Email">📧 vavenash@gmail.com</a>
+          <a id="linkedin" href="https://www.linkedin.com/in/avenash" target="_blank" rel="noopener">in/avenash</a>
+          <a id="github" href="https://github.com/vavenash" target="_blank" rel="noopener">github.com/vavenash</a>
+          <span class="tag" title="US Work Status">H1B • I-140 Approved</span>
+        </div>
+      </div>
+      <div class="cta">
+        <button class="btn" id="themeToggle">Toggle Theme</button>
+        <button class="btn primary" onclick="window.print()">Download PDF</button>
+      </div>
+    </header>
+
+    <nav class="topnav" id="spaNav" role="navigation" aria-label="Primary">
+      <a href="#home" data-route="home" class="active">Home</a>
+      <a href="#blog" data-route="blog">Blog</a>
+    </nav>
+<main>
+<section id="home" aria-label="Home">
+    <section class="grid">
+      <div class="col-8">
+        <div class="card">
+          <h2>Professional Summary</h2>
+          <p class="summary" id="summary">
+            Innovative Cloud & DevOps Architect with 18+ years delivering secure & resilient platforms across AWS, ECS and Kubernetes. Expert in CI/CD at scale, IaC and observability. Proven history of cutting cloud expenses by 20+% while improving release velocity and uptime. Led cross‑geo teams of 15+ and shipped high‑traffic AEM and ECS platforms with blue/green & canary strategies.
+          </p>
+          <div class="kpi">
+            <div class="pill">20+% cloud cost reduction</div>
+            <div class="pill">40% reduction to build/deploy times</div>
+            <div class="pill">99.9% platform uptime</div>
+          </div>
+        </div>
+
+        <div class="card">
+          <h2>Experience</h2>
+          <div class="exp">
+            <div class="exp-item">
+              <div class="exp-head">
+                <div class="company">Capgemini Inc. — <span class="title">Senior Project Manager / Sr. Solution Architect</span></div>
+                <div class="period">Present</div>
+              </div>
+              <ul>
+                <li>Architected a multi-account ECS platform, introducing blue/green and canary release strategies that achieved zero-downtime deployments.</li>
+                <li>Directed cross-regional engineering teams (across the US, UK, and India), establishing priorities, delivery roadmaps and engineering standards that improved release velocity and ensured consistent quality.</li>
+                <li>Transitioned enterprise CI/CD pipelines to GitHub Actions, creating reusable workflows that reduced build and deployment cycles by 40%.</li>
+                <li>Developed Python/boto3 automation to provision ECS and AWS infrastructure via infrastructure-as-code, reducing manual provisioning time by 70% and enabling rapid, consistent environment setup;</li>
+                <li>Implemented workload rightsizing and scheduling initiatives across EC2 fleets, reducing operational costs by over 20% annually while maintaining service‑level agreements.</li>
+                <li>Engineered and deployed an Adobe Experience Manager (AEM) solution on AWS (Authors/Publishers/Dispatchers) leveraging Akamai and CloudFront, tuned for high‑traffic reliability and superior user experience.</li>
+                <li><strong>Tech:</strong> AWS, ECS, AEM, Akamai, CloudFront, GitHub Actions, Splunk, Honeycomb, AppDynamics, Grafana.</li>
+              </ul>
+            </div>
+            <div class="exp-item">
+              <div class="exp-head">
+                <div class="company">Ally Bank — <span class="title">Senior Systems Architect</span></div>
+              </div>
+              <ul>
+                <li>Drove migration of monolithic applications to microservices on OpenShift, reducing build and deployment times and enhancing scalability.</li>
+                <li>Engineered continuous integration and delivery pipelines using Jenkins, Helm, and Ansible, and implemented observability dashboards that improved platform uptime by 15% and provided actionable insights for operations.</li>
+                <li>Strategically replaced proprietary software with open‑source tooling to reduce licensing costs by approximately 20%, while maintaining or improving functionality.</li>
+                <li><strong>Tech:</strong> OpenShift, Jenkins, Helm, Ansible, Splunk, AppDynamics.</li>
+              </ul>
+            </div>
+            <div class="exp-item">
+              <div class="exp-head">
+                <div class="company">Infosys Ltd — <span class="title">Technology Architect</span></div>
+              </div>
+              <ul>
+                <li>Served as Platform Architect for Adobe Experience Manager, delivering 99.9% uptime and overseeing the design and deployment of highly available content management solutions.</li>
+                <li>Developed LAMP/Java deployment automation that saved over $200k in operational costs and streamlined ETL processes, cutting lead times by 30%.</li>
+                <li>Designed and implemented an in‑house monitoring solution to replace Sitescope, eliminating licensing fees and improving monitoring capabilities.</li>
+                <li><strong>Tech:</strong> AEM, AWS, Informatica, SolarWinds, RHEL.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <h2>Key Achievements</h2>
+          <ul>
+            <li>Reduced cloud costs by more than 20% through workload rightsizing, intelligent scheduling, and automation initiatives.</li>
+            <li>Raised platform uptime to 99.9% by establishing proactive service-level objectives (SLOs) and building comprehensive observability dashboards.</li>
+            <li>Executed a large-scale migration from monolithic architectures to microservices, cutting deployment times by 40% and enhancing agility.</li>
+            <li>Awarded “Best Critical Thinking” for streamlining incident management.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-4">
+        <div class="card">
+          <h2>Core Competencies</h2>
+          <div class="tags">
+            <span class="tag">Development - Python • TypeScript • JS • Shell</span>
+            <span class="tag">Cloud Platform - AWS</span>
+            <span class="tag">CI/CD - GitHub Actions & Workflows, Jenkins</span>
+            <span class="tag">Containerization - ECS, EKS & OpenShift</span>
+            <span class="tag">CMS - Adobe Experience Manager 6x</span>
+            <span class="tag">Helm • Ansible • Terraform</span>
+            <span class="tag">Observability - Splunk, Grafana, Honeycomb</span>
+          </div>
+        </div>
+        <div class="card">
+          <h2>Education</h2>
+          <p><strong>B.E., Mechanical Engineering</strong></p>
+        </div>
+        <div class="card">
+          <h2>Certifications</h2>
+          <ul>
+            <li>HarvardX Machine Learning & AI with Python</li>
+            <li>AWS Certified Solutions Architect – Associate</li>
+            <li>Site Reliability Engineer (SRE) Foundation</li>
+            <li>ITIL v3 Foundation</li>
+            <li>Informatica Advanced Architecture & Administration (PowerCenter)</li>
+          </ul>
+        </div>
+      </div>
+  </section>
+</section>
+
+<section id="blog" class="hidden" aria-labelledby="blog-title">
+  <div class="card">
+    <h2 id="blog-title">Blog</h2>
+    <p>More Coming Soon!!!</p>
+  </div>
+  <div class="blog-grid">
+    <div class="blog-col-8">
+      <article class="post">
+        <h3>Designing Cost-Efficient EKS/ECS Workloads</h3>
+        <div class="meta">Published August 11, 2025 • 4 min read</div>
+        <div class="tags"><span class="chip">AWS</span><span class="chip">ECS</span><span class="chip">FinOps</span></div>
+        <p>Notes on selecting right-sized compute, autoscaling policies, and observability signals to reduce spend without sacrificing reliability.</p>
+        <a href="#blog" aria-label="Read more about cost-efficient workloads">Read more →</a>
+      </article>
+      <article class="post">
+        <h3>GitHub Actions: Reusable Workflows at Scale</h3>
+        <div class="meta">Published August 11, 2025 • 3 min read</div>
+        <div class="tags"><span class="chip">CI/CD</span><span class="chip">GitHub Actions</span></div>
+        <p>How to standardize pipelines with composite actions, environment protection rules, and secrets management across hundreds of services.</p>
+        <a href="#blog" aria-label="Read more about reusable workflows">Read more →</a>
+      </article>
+      <article class="post">
+        <h3>Practical SLOs for Platform Teams</h3>
+        <div class="meta">Published August 11, 2025 • 5 min read</div>
+        <div class="tags"><span class="chip">SRE</span><span class="chip">SLO</span><span class="chip">Observability</span></div>
+        <p>Defining user-centric indicators, budgeting error, and wiring alerts that reduce noise while improving incident response time.</p>
+        <a href="#blog" aria-label="Read more about SLOs">Read more →</a>
+      </article>
+    </div>
+    <aside class="blog-col-4">
+      <div class="card">
+        <h2>About this blog</h2>
+        <p>Short write-ups on tech musings, cloud platforms, proof of concepts and explorations.</p>
+      </div>
+      <div class="card">
+        <h2>Topics</h2>
+        <div class="tags">
+          <span class="chip">AWS</span><span class="chip">Kubernetes</span><span class="chip">CI/CD</span>
+          <span class="chip">Cost Optimization</span><span class="chip">SRE</span>
+        </div>
+      </div>
+    </aside>
+  </div>
+</section>
+    
+</main>
+</section>
+
+<footer>
+    © <span id="year"></span> Avenash Vasant • Built with clean, accessible HTML/CSS. Print to PDF for sharing.
+  </footer>
+</div>
+
+  <script>
+    // Basic state with localStorage persistence
+    const THEME_KEY = 'avenash.theme';
+    const DEFAULT_AVATAR_PATH = 'assets/profile.jpg';
+    const avatarEl = document.getElementById('avatar');
+
+    const yearEl = document.getElementById('year');
+    yearEl.textContent = new Date().getFullYear();
+
+    // Load saved avatar or fallback
+    function loadAvatar(){
+      // Load a static avatar from DEFAULT_AVATAR_PATH; fallback to placeholder if not found.
+      avatarEl.src = DEFAULT_AVATAR_PATH;
+      avatarEl.onerror = () => {
+        avatarEl.src = 'data:image/svg+xml;utf8,' + encodeURIComponent(`
+        <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200">
+          <defs>
+            <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+              <stop offset="0" stop-color="#6aa1ff"/>
+              <stop offset="1" stop-color="#56e39f"/>
+            </linearGradient>
+          </defs>
+          <rect width="100%" height="100%" fill="url(#g)"/>
+          <circle cx="100" cy="80" r="38" fill="#fff" opacity="0.85"/>
+          <rect x="38" y="132" width="124" height="36" rx="18" fill="#fff" opacity="0.85"/>
+        </svg>`);
+      };
+    }
+
+    loadAvatar();
+
+    // Theme toggle (light/dark)
+    const themeToggle = document.getElementById('themeToggle');
+
+    function setThemeVars(mode){
+      if(mode === 'light'){
+        const r = document.querySelector(':root');
+        r.style.setProperty('--bg', '#f6f8fb');
+        r.style.setProperty('--card', '#ffffff');
+        r.style.setProperty('--muted', '#5c6b82');
+        r.style.setProperty('--text', '#0b1320');
+        r.style.setProperty('--brand', '#2b66ff');
+        r.style.setProperty('--accent', '#1fbf74');
+      } else { // dark (default)
+        const r = document.querySelector(':root');
+        r.style.setProperty('--bg', '#0b1320');
+        r.style.setProperty('--card', '#101a2b');
+        r.style.setProperty('--muted', '#9fb0c9');
+        r.style.setProperty('--text', '#e8eef8');
+        r.style.setProperty('--brand', '#6aa1ff');
+        r.style.setProperty('--accent', '#56e39f');
+      }
+    }
+
+    function applyTheme(){
+      const stored = localStorage.getItem(THEME_KEY) || 'dark';
+      setThemeVars(stored);
+    }
+
+    themeToggle.addEventListener('click', () => {
+      const current = localStorage.getItem(THEME_KEY) || 'dark';
+      const next = current === 'light' ? 'dark' : 'light';
+      localStorage.setItem(THEME_KEY, next);
+      setThemeVars(next);
+    });
+
+    applyTheme();
+
+    // Optional: structured data for SEO
+    const ld = {
+      '@context':'https://schema.org',
+      '@type':'Person',
+      'name':'Avenash Vasant',
+      'jobTitle':'Cloud & DevOps Architect',
+      'email':'mailto:vavenash@gmail.com',
+      'url':window.location.href,
+      'sameAs':[ 'https://www.linkedin.com/in/avenash', 'https://github.com/vavenash' ],
+      'worksFor':{ '@type':'Organization','name':'Capgemini' },
+      'knowsAbout':['AWS','ECS','Kubernetes','AEM','CI/CD','GitHub Actions','Helm','Ansible','Terraform','Observability']
+    };
+    const s = document.createElement('script');
+    s.type = 'application/ld+json';
+    s.textContent = JSON.stringify(ld);
+    document.head.appendChild(s);
+  
+    // --- Simple SPA Router ---
+    const routes = ['home','blog'];
+    function showRoute(route){
+      routes.forEach(r => {
+        const el = document.getElementById(r);
+        const link = document.querySelector(`.topnav a[data-route="${r}"]`);
+        if(!el || !link) return;
+        if(r === route){ el.classList.remove('hidden'); link.classList.add('active'); }
+        else { el.classList.add('hidden'); link.classList.remove('active'); }
+      });
+      if(route === 'home'){ document.title = 'Avenash Vasant — Cloud/DevOps Architect'; }
+      if(route === 'blog'){ document.title = 'Blog — Avenash Vasant'; }
+    }
+    function getRoute(){ const h = (location.hash || '#home').replace('#',''); return routes.includes(h)?h:'home'; }
+    window.addEventListener('hashchange', () => showRoute(getRoute()));
+    // Initialize route on load
+    showRoute(getRoute());
+
+</script>
+</body>
+</html>
