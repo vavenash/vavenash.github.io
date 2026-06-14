@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Avenash Vasant — Cloud/DevOps Architect</title>
-  <meta name="description" content="Executive résumé of Avenash Vasant — Cloud & DevOps Architect with 16+ years of experience across AWS, Kubernetes, CI/CD, and cost optimization." />
+  <title>Avenash Vasant — Platform Engineer | Agentic AI</title>
+  <meta name="description" content="Résumé of Avenash Vasant — Platform Engineer & Cloud Architect with 18+ years across AWS, Kubernetes, CI/CD, and Agentic AI infrastructure." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Roboto+Mono:wght@400;600&display=swap" rel="stylesheet">
@@ -84,12 +84,13 @@
       a{text-decoration:none;color:#000}
       .card{box-shadow:none;border:1px solid #e5e7eb}
     }
-  
+
     /* Top Nav (SPA) */
     .topnav{display:flex;gap:10px;flex-wrap:wrap;margin:0 0 16px 0}
     .topnav a{padding:10px 14px;border-radius:12px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.08);color:var(--text)}
     .topnav a.active{background:linear-gradient(135deg,var(--brand),#7ccaff);color:#fff;border:none;box-shadow:0 6px 18px rgba(43,102,255,.35)}
     .hidden{display:none}
+
     /* Blog styles */
     .blog-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:16px}
     .blog-col-8{grid-column:span 8}
@@ -101,6 +102,20 @@
     .post .tags{gap:6px}
     .chip{padding:4px 8px;border-radius:999px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.08);font-size:11px}
 
+    /* Project cards */
+    .project-grid{display:flex;flex-direction:column;gap:16px}
+    .project-card{background:var(--card);border:1px solid rgba(106,161,255,.18);border-radius:18px;padding:20px;box-shadow:0 10px 30px rgba(0,0,0,.25)}
+    .project-card h3{margin:0 0 6px 0;font-size:17px}
+    .project-card .sub{color:var(--muted);font-size:13px;margin:0 0 10px 0}
+    .project-card ul{margin:10px 0 12px 18px}
+    .status-badge{display:inline-block;padding:3px 10px;border-radius:999px;font-size:11px;font-weight:600;letter-spacing:.4px}
+    .status-badge.active{background:rgba(86,227,159,.15);border:1px solid rgba(86,227,159,.4);color:#56e39f}
+    .status-badge.wip{background:rgba(255,190,80,.12);border:1px solid rgba(255,190,80,.35);color:#ffbe50}
+
+    .cert-list{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:8px}
+    .cert-list li{display:flex;align-items:flex-start;gap:8px;font-size:13px;line-height:1.5}
+    .cert-list li::before{content:"✦";color:var(--accent);flex-shrink:0;margin-top:2px}
+    .cert-highlight{font-weight:600;color:var(--accent)}
 </style>
 </head>
 <body>
@@ -111,12 +126,11 @@
       </div>
       <div>
         <h1 id="name">Avenash Vasant</h1>
-        <p class="role" id="role">Cloud & DevOps • Senior Solutions Architect</p>
+        <p class="role" id="role">Platform Engineer &nbsp;·&nbsp; Cloud Infrastructure &nbsp;·&nbsp; CI/CD &amp; Developer Tooling &nbsp;·&nbsp; Agentic AI</p>
         <div class="links">
           <a id="email" href="mailto:vavenash@gmail.com" aria-label="Email">📧 vavenash@gmail.com</a>
           <a id="linkedin" href="https://www.linkedin.com/in/avenash" target="_blank" rel="noopener">in/avenash</a>
           <a id="github" href="https://github.com/vavenash" target="_blank" rel="noopener">github.com/vavenash</a>
-          <span class="tag" title="US Work Status">H1B • I-140 Approved</span>
         </div>
       </div>
       <div class="cta">
@@ -127,133 +141,223 @@
 
     <nav class="topnav" id="spaNav" role="navigation" aria-label="Primary">
       <a href="#home" data-route="home" class="active">Home</a>
+      <a href="#projects" data-route="projects">AI Projects</a>
       <a href="#blog" data-route="blog">Blog</a>
     </nav>
+
 <main>
+
+<!-- ══════════════════════════════ HOME ══════════════════════════════ -->
 <section id="home" aria-label="Home">
-    <section class="grid">
-      <div class="col-8">
-        <div class="card">
-          <h2>Professional Summary</h2>
-          <p class="summary" id="summary">
-            Innovative Cloud & DevOps Architect with 18+ years delivering secure & resilient platforms across AWS, ECS and Kubernetes. Expert in CI/CD at scale, IaC and observability. Proven history of cutting cloud expenses by 20+% while improving release velocity and uptime. Led cross‑geo teams of 15+ and shipped high‑traffic AEM and ECS platforms with blue/green & canary strategies.
-          </p>
-          <div class="kpi">
-            <div class="pill">20+% cloud cost reduction</div>
-            <div class="pill">40% reduction to build/deploy times</div>
-            <div class="pill">99.9% platform uptime</div>
-          </div>
-        </div>
-
-        <div class="card">
-          <h2>Experience</h2>
-          <div class="exp">
-            <div class="exp-item">
-              <div class="exp-head">
-                <div class="company">Capgemini Inc. — <span class="title">Senior Project Manager / Sr. Solution Architect</span></div>
-                <div class="period">Present</div>
-              </div>
-              <ul>
-                <li>Architected a multi-account ECS platform, introducing blue/green and canary release strategies that achieved zero-downtime deployments.</li>
-                <li>Directed cross-regional engineering teams (across the US, UK, and India), establishing priorities, delivery roadmaps and engineering standards that improved release velocity and ensured consistent quality.</li>
-                <li>Transitioned enterprise CI/CD pipelines to GitHub Actions, creating reusable workflows that reduced build and deployment cycles by 40%.</li>
-                <li>Developed Python/boto3 automation to provision ECS and AWS infrastructure via infrastructure-as-code, reducing manual provisioning time by 70% and enabling rapid, consistent environment setup;</li>
-                <li>Implemented workload rightsizing and scheduling initiatives across EC2 fleets, reducing operational costs by over 20% annually while maintaining service‑level agreements.</li>
-                <li>Engineered and deployed an Adobe Experience Manager (AEM) solution on AWS (Authors/Publishers/Dispatchers) leveraging Akamai and CloudFront, tuned for high‑traffic reliability and superior user experience.</li>
-                <li><strong>Tech:</strong> AWS, ECS, AEM, Akamai, CloudFront, GitHub Actions, Splunk, Honeycomb, AppDynamics, Grafana.</li>
-              </ul>
-            </div>
-            <div class="exp-item">
-              <div class="exp-head">
-                <div class="company">Ally Bank — <span class="title">Senior Systems Architect</span></div>
-              </div>
-              <ul>
-                <li>Drove migration of monolithic applications to microservices on OpenShift, reducing build and deployment times and enhancing scalability.</li>
-                <li>Engineered continuous integration and delivery pipelines using Jenkins, Helm, and Ansible, and implemented observability dashboards that improved platform uptime by 15% and provided actionable insights for operations.</li>
-                <li>Strategically replaced proprietary software with open‑source tooling to reduce licensing costs by approximately 20%, while maintaining or improving functionality.</li>
-                <li><strong>Tech:</strong> OpenShift, Jenkins, Helm, Ansible, Splunk, AppDynamics.</li>
-              </ul>
-            </div>
-            <div class="exp-item">
-              <div class="exp-head">
-                <div class="company">Infosys Ltd — <span class="title">Technology Architect</span></div>
-              </div>
-              <ul>
-                <li>Served as Platform Architect for Adobe Experience Manager, delivering 99.9% uptime and overseeing the design and deployment of highly available content management solutions.</li>
-                <li>Developed LAMP/Java deployment automation that saved over $200k in operational costs and streamlined ETL processes, cutting lead times by 30%.</li>
-                <li>Designed and implemented an in‑house monitoring solution to replace Sitescope, eliminating licensing fees and improving monitoring capabilities.</li>
-                <li><strong>Tech:</strong> AEM, AWS, Informatica, SolarWinds, RHEL.</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <div class="card">
-          <h2>Key Achievements</h2>
-          <ul>
-            <li>Reduced cloud costs by more than 20% through workload rightsizing, intelligent scheduling, and automation initiatives.</li>
-            <li>Raised platform uptime to 99.9% by establishing proactive service-level objectives (SLOs) and building comprehensive observability dashboards.</li>
-            <li>Executed a large-scale migration from monolithic architectures to microservices, cutting deployment times by 40% and enhancing agility.</li>
-            <li>Awarded “Best Critical Thinking” for streamlining incident management.</li>
-          </ul>
+  <section class="grid">
+    <div class="col-8">
+      <div class="card">
+        <h2>Professional Summary</h2>
+        <p class="summary" id="summary">
+          Platform Engineer and Cloud Architect with 18+ years of experience building the foundational infrastructure that engineering organizations depend on to ship reliably at scale. Proven track record across CI/CD pipeline design, Kubernetes/ECS container orchestration, multi-cloud networking, observability systems, and developer productivity tooling — consistently operating at tech lead level on complex, multi-month platform initiatives. Now expanding into Agentic AI infrastructure: building RAG pipelines on Amazon Bedrock, multi-agent systems with the Claude Agent SDK, and AgentOps CI/CD pipelines for safe AI agent deployment.
+        </p>
+        <div class="kpi">
+          <div class="pill">20%+ cloud cost reduction</div>
+          <div class="pill">40% faster build &amp; deploy cycles</div>
+          <div class="pill">99.9% platform uptime</div>
         </div>
       </div>
 
-      <div class="col-4">
-        <div class="card">
-          <h2>Core Competencies</h2>
-          <div class="tags">
-            <span class="tag">Development - Python • TypeScript • JS • Shell</span>
-            <span class="tag">Cloud Platform - AWS</span>
-            <span class="tag">CI/CD - GitHub Actions & Workflows, Jenkins</span>
-            <span class="tag">Containerization - ECS, EKS & OpenShift</span>
-            <span class="tag">CMS - Adobe Experience Manager 6x</span>
-            <span class="tag">Helm • Ansible • Terraform</span>
-            <span class="tag">Observability - Splunk, Grafana, Honeycomb</span>
+      <div class="card">
+        <h2>Experience</h2>
+        <div class="exp">
+          <div class="exp-item">
+            <div class="exp-head">
+              <div class="company">Capgemini Inc. &mdash; <span class="title">Sr. Solution Architect / Senior Manager</span></div>
+              <div class="period">Oct 2019 – Present</div>
+            </div>
+            <ul>
+              <li>Independently architected and owned end-to-end deployment of an ECS container platform hosting 2,000+ applications — a foundational platform system relied upon by engineering teams across the organization.</li>
+              <li>Designed Zero Downtime Deployment strategies (Blue/Green, Canary) as reusable platform primitives adopted across product teams, setting the standard for safe, reliable deployments at scale.</li>
+              <li>Architected and migrated enterprise CI/CD pipelines to GitHub Actions with reusable workflows, standardizing deployment patterns across application teams and accelerating build/deploy cycles by 40%.</li>
+              <li>Drove 20%+ reduction in AWS operational costs through EC2 rightsizing, infrastructure optimization, and Python/Boto3-based workflow automation.</li>
+              <li>Led a cross-functional platform team of 15+ engineers across the US, UK, and India; drove architectural roadmaps and made independent technical decisions across multi-month ambiguous initiatives.</li>
+              <li>Upskilled into Agentic AI by delivering an Advanced ECS Support Agent on Amazon Bedrock — demonstrating hands-on initiative in RAG and agentic infrastructure directly relevant to platform developer tooling.</li>
+              <li><strong>Tech:</strong> AWS, ECS, CloudFront, Akamai, GitHub Actions, Terraform, Splunk, Honeycomb, AppDynamics, Grafana, Python, Bedrock</li>
+            </ul>
+          </div>
+          <div class="exp-item">
+            <div class="exp-head">
+              <div class="company">Ally Bank &mdash; <span class="title">Senior Systems Architect</span></div>
+              <div class="period">Apr 2016 – Oct 2019</div>
+            </div>
+            <ul>
+              <li>Led migration of monolithic applications to microservices on OpenShift (Kubernetes), reducing build and deployment time by 40% — enabling product teams to ship independently at scale.</li>
+              <li>Designed and built standardized CI/CD pipelines using Jenkins, Helm, and Ansible as shared platform infrastructure consumed across the engineering organization.</li>
+              <li>Reduced platform costs by 20% through open-source tooling adoption and custom monitoring solutions replacing proprietary systems.</li>
+              <li><strong>Tech:</strong> OpenShift, Kubernetes, Helm, Jenkins, Ansible, Splunk, AppDynamics</li>
+            </ul>
+          </div>
+          <div class="exp-item">
+            <div class="exp-head">
+              <div class="company">Infosys Ltd. &mdash; <span class="title">Technology Architect</span></div>
+              <div class="period">Jun 2007 – Apr 2016</div>
+            </div>
+            <ul>
+              <li>Served as Platform Architect for Adobe Experience Manager (AEM), maintaining 99.9% uptime across enterprise-scale deployments.</li>
+              <li>Saved $1M+ by building a Deployment Automation Tool using Java APIs and scripting — an early platform productivity initiative that eliminated costly manual processes.</li>
+              <li>Designed and implemented an in-house monitoring solution replacing SiteScope, eliminating licensing fees and improving observability capabilities.</li>
+              <li><strong>Tech:</strong> AEM, AWS, Informatica, RHEL Linux, Java APIs, Shell Scripting</li>
+            </ul>
           </div>
         </div>
-        <div class="card">
-          <h2>Education</h2>
-          <p><strong>B.E., Mechanical Engineering</strong></p>
-        </div>
-        <div class="card">
-          <h2>Certifications</h2>
-          <ul>
-            <li>HarvardX Machine Learning & AI with Python</li>
-            <li>AWS Certified Solutions Architect – Associate</li>
-            <li>Site Reliability Engineer (SRE) Foundation</li>
-            <li>ITIL v3 Foundation</li>
-            <li>Informatica Advanced Architecture & Administration (PowerCenter)</li>
-          </ul>
+      </div>
+
+      <div class="card">
+        <h2>Key Achievements</h2>
+        <ul>
+          <li>Reduced cloud costs by 20%+ through workload rightsizing, intelligent scheduling, and automation initiatives.</li>
+          <li>Raised platform uptime to 99.9% by establishing proactive SLOs and building comprehensive observability dashboards.</li>
+          <li>Executed a large-scale migration from monolithic architectures to microservices, cutting deployment times by 40%.</li>
+          <li>Delivered $1M+ in savings via deployment automation tooling at Infosys, eliminating high-cost manual processes.</li>
+          <li>Awarded "Best Critical Thinking" for streamlining incident management processes.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="col-4">
+      <div class="card">
+        <h2>Core Skills</h2>
+        <div class="tags">
+          <span class="tag">AWS — ECS, EC2, S3, Lambda, Bedrock, IAM</span>
+          <span class="tag">Containers — Docker, Kubernetes, ECS, OpenShift</span>
+          <span class="tag">CI/CD — GitHub Actions, Jenkins, Terraform, Ansible</span>
+          <span class="tag">Observability — Splunk, Grafana, Honeycomb, Prometheus</span>
+          <span class="tag">Programming — Python, FastAPI, Boto3, Shell, Java</span>
+          <span class="tag">Agentic AI — Bedrock, Claude Agent SDK, RAG, MCP, LangChain, LangGraph, AgentOps</span>
         </div>
       </div>
+      <div class="card">
+        <h2>Education</h2>
+        <p><strong>B.E., Mechanical Engineering</strong><br/><span style="color:var(--muted);font-size:13px">Chennai, India</span></p>
+      </div>
+      <div class="card">
+        <h2>Certifications</h2>
+        <ul class="cert-list">
+          <li><span class="cert-highlight">Claude Certified Architect — Foundations</span><br/>Anthropic</li>
+          <li>AWS Certified Solutions Architect — Associate</li>
+          <li>ITIL v3 Foundation</li>
+        </ul>
+      </div>
+    </div>
   </section>
 </section>
 
+<!-- ══════════════════════════ AI PROJECTS ══════════════════════════ -->
+<section id="projects" class="hidden" aria-labelledby="projects-title">
+  <div class="grid">
+    <div class="col-8">
+      <div class="card" style="margin-bottom:16px">
+        <h2 id="projects-title">Agentic AI Projects <span style="font-size:12px;font-weight:400;text-transform:none;color:var(--muted)">(2026)</span></h2>
+        <p class="summary">Hands-on agentic AI infrastructure work built alongside my platform engineering career — RAG pipelines, multi-agent orchestration, and AgentOps CI/CD for safe AI agent deployment.</p>
+      </div>
+
+      <div class="project-grid">
+
+        <div class="project-card">
+          <div style="display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:8px">
+            <h3>Advanced ECS Support Agent</h3>
+            <span class="status-badge active">Active</span>
+          </div>
+          <p class="sub">Bedrock-powered RAG assistant for ECS platform support</p>
+          <ul>
+            <li>Built a production-grade RAG pipeline ingesting Confluence Markdown with JSON metadata into an Amazon Bedrock Knowledge Base (S3-backed) with citation-grounded responses — directly applicable to platform documentation and developer self-service tooling.</li>
+            <li>Implemented query classification, hybrid retrieval, reranking, schema-constrained outputs, and confidence scoring using Claude Haiku/Opus, FastAPI, Lambda, and Streamlit.</li>
+          </ul>
+          <div class="tags">
+            <span class="chip">Amazon Bedrock</span><span class="chip">RAG</span><span class="chip">Knowledge Bases</span><span class="chip">FastAPI</span><span class="chip">Lambda</span><span class="chip">Streamlit</span><span class="chip">Claude</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div style="display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:8px">
+            <h3>Claude Agent SDK Multi-Agent Demo</h3>
+            <span class="status-badge active">Active</span>
+          </div>
+          <p class="sub">Coordinator-agent pattern with specialized sub-agents</p>
+          <ul>
+            <li>Developed a coordinator-agent architecture using the Claude Agent SDK where a primary agent delegates tasks to specialized sub-agents via <code>AgentDefinition</code> and the SDK Agent tool.</li>
+            <li>Built with Python, Claude Agent SDK, and a GitHub-based project workflow — demonstrating deep familiarity with Anthropic's multi-agent orchestration primitives.</li>
+          </ul>
+          <div class="tags">
+            <span class="chip">Claude Agent SDK</span><span class="chip">Multi-Agent</span><span class="chip">Python</span><span class="chip">GitHub Actions</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div style="display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:8px">
+            <h3>AgentOps CI/CD Pipeline</h3>
+            <span class="status-badge wip">In Development</span>
+          </div>
+          <p class="sub">Release gating pipeline for safe AI agent deployment</p>
+          <ul>
+            <li>Designing an AgentOps release pipeline to gate AI-agent changes across prompts, tools, model configs, policies, guardrails, and eval datasets before deployment — a direct analog to safe, reliable deployment infrastructure.</li>
+            <li>Includes agent-under-test execution, eval gating, regression checks, trace-based validation, and promotion workflows using Bedrock AgentCore, LangGraph, GitHub Actions, Lambda, and CloudWatch.</li>
+          </ul>
+          <div class="tags">
+            <span class="chip">Bedrock AgentCore</span><span class="chip">LangGraph</span><span class="chip">AgentOps</span><span class="chip">GitHub Actions</span><span class="chip">Lambda</span><span class="chip">CloudWatch</span><span class="chip">Guardrails</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <aside class="col-4">
+      <div class="card">
+        <h2>AI / GenAI Stack</h2>
+        <div class="tags">
+          <span class="tag">Amazon Bedrock</span>
+          <span class="tag">Bedrock Knowledge Bases</span>
+          <span class="tag">Bedrock AgentCore</span>
+          <span class="tag">Claude Agent SDK</span>
+          <span class="tag">RAG Pipelines</span>
+          <span class="tag">MCP (Model Context Protocol)</span>
+          <span class="tag">LangChain / LangGraph</span>
+          <span class="tag">AgentOps</span>
+          <span class="tag">Guardrails</span>
+          <span class="tag">Prompt Engineering</span>
+          <span class="tag">FastAPI</span>
+          <span class="tag">Streamlit</span>
+        </div>
+      </div>
+      <div class="card" style="margin-top:0">
+        <h2>Approach</h2>
+        <p style="font-size:14px;line-height:1.7;color:var(--muted)">Each project is designed to mirror real production platform challenges — not toy demos. RAG pipelines are evaluated with citation grounding and confidence scoring; multi-agent systems use SDK-native orchestration primitives; CI/CD pipelines treat AI agents with the same release rigor as application code.</p>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<!-- ══════════════════════════════ BLOG ══════════════════════════════ -->
 <section id="blog" class="hidden" aria-labelledby="blog-title">
   <div class="card">
     <h2 id="blog-title">Blog</h2>
-    <p>More Coming Soon!!!</p>
+    <p>More Coming Soon!</p>
   </div>
   <div class="blog-grid">
     <div class="blog-col-8">
       <article class="post">
         <h3>Designing Cost-Efficient EKS/ECS Workloads</h3>
-        <div class="meta">Published August 11, 2025 • 4 min read</div>
+        <div class="meta">Published August 11, 2025 &bull; 4 min read</div>
         <div class="tags"><span class="chip">AWS</span><span class="chip">ECS</span><span class="chip">FinOps</span></div>
         <p>Notes on selecting right-sized compute, autoscaling policies, and observability signals to reduce spend without sacrificing reliability.</p>
         <a href="#blog" aria-label="Read more about cost-efficient workloads">Read more →</a>
       </article>
       <article class="post">
         <h3>GitHub Actions: Reusable Workflows at Scale</h3>
-        <div class="meta">Published August 11, 2025 • 3 min read</div>
+        <div class="meta">Published August 11, 2025 &bull; 3 min read</div>
         <div class="tags"><span class="chip">CI/CD</span><span class="chip">GitHub Actions</span></div>
         <p>How to standardize pipelines with composite actions, environment protection rules, and secrets management across hundreds of services.</p>
         <a href="#blog" aria-label="Read more about reusable workflows">Read more →</a>
       </article>
       <article class="post">
         <h3>Practical SLOs for Platform Teams</h3>
-        <div class="meta">Published August 11, 2025 • 5 min read</div>
+        <div class="meta">Published August 11, 2025 &bull; 5 min read</div>
         <div class="tags"><span class="chip">SRE</span><span class="chip">SLO</span><span class="chip">Observability</span></div>
         <p>Defining user-centric indicators, budgeting error, and wiring alerts that reduce noise while improving incident response time.</p>
         <a href="#blog" aria-label="Read more about SLOs">Read more →</a>
@@ -262,39 +366,34 @@
     <aside class="blog-col-4">
       <div class="card">
         <h2>About this blog</h2>
-        <p>Short write-ups on tech musings, cloud platforms, proof of concepts and explorations.</p>
+        <p>Short write-ups on cloud platforms, agentic AI infrastructure, proof of concepts, and engineering musings.</p>
       </div>
       <div class="card">
         <h2>Topics</h2>
         <div class="tags">
           <span class="chip">AWS</span><span class="chip">Kubernetes</span><span class="chip">CI/CD</span>
-          <span class="chip">Cost Optimization</span><span class="chip">SRE</span>
+          <span class="chip">Agentic AI</span><span class="chip">Cost Optimization</span><span class="chip">SRE</span>
         </div>
       </div>
     </aside>
   </div>
 </section>
-    
+
 </main>
-</section>
 
 <footer>
-    © <span id="year"></span> Avenash Vasant • Built with clean, accessible HTML/CSS. Print to PDF for sharing.
-  </footer>
+  &copy; <span id="year"></span>&bull; Avenash Vasant &bull; Built with clean, accessible HTML/CSS. Print to PDF for sharing.
+</footer>
 </div>
 
   <script>
-    // Basic state with localStorage persistence
     const THEME_KEY = 'avenash.theme';
     const DEFAULT_AVATAR_PATH = 'assets/profile.jpg';
     const avatarEl = document.getElementById('avatar');
-
     const yearEl = document.getElementById('year');
     yearEl.textContent = new Date().getFullYear();
 
-    // Load saved avatar or fallback
     function loadAvatar(){
-      // Load a static avatar from DEFAULT_AVATAR_PATH; fallback to placeholder if not found.
       avatarEl.src = DEFAULT_AVATAR_PATH;
       avatarEl.onerror = () => {
         avatarEl.src = 'data:image/svg+xml;utf8,' + encodeURIComponent(`
@@ -311,23 +410,19 @@
         </svg>`);
       };
     }
-
     loadAvatar();
 
-    // Theme toggle (light/dark)
     const themeToggle = document.getElementById('themeToggle');
-
     function setThemeVars(mode){
+      const r = document.querySelector(':root');
       if(mode === 'light'){
-        const r = document.querySelector(':root');
         r.style.setProperty('--bg', '#f6f8fb');
         r.style.setProperty('--card', '#ffffff');
         r.style.setProperty('--muted', '#5c6b82');
         r.style.setProperty('--text', '#0b1320');
         r.style.setProperty('--brand', '#2b66ff');
         r.style.setProperty('--accent', '#1fbf74');
-      } else { // dark (default)
-        const r = document.querySelector(':root');
+      } else {
         r.style.setProperty('--bg', '#0b1320');
         r.style.setProperty('--card', '#101a2b');
         r.style.setProperty('--muted', '#9fb0c9');
@@ -336,40 +431,42 @@
         r.style.setProperty('--accent', '#56e39f');
       }
     }
-
     function applyTheme(){
       const stored = localStorage.getItem(THEME_KEY) || 'dark';
       setThemeVars(stored);
     }
-
     themeToggle.addEventListener('click', () => {
       const current = localStorage.getItem(THEME_KEY) || 'dark';
       const next = current === 'light' ? 'dark' : 'light';
       localStorage.setItem(THEME_KEY, next);
       setThemeVars(next);
     });
-
     applyTheme();
 
-    // Optional: structured data for SEO
+    // Structured data / SEO
     const ld = {
       '@context':'https://schema.org',
       '@type':'Person',
       'name':'Avenash Vasant',
-      'jobTitle':'Cloud & DevOps Architect',
+      'jobTitle':'Platform Engineer | Cloud Infrastructure | Agentic AI',
       'email':'mailto:vavenash@gmail.com',
       'url':window.location.href,
-      'sameAs':[ 'https://www.linkedin.com/in/avenash', 'https://github.com/vavenash' ],
-      'worksFor':{ '@type':'Organization','name':'Capgemini' },
-      'knowsAbout':['AWS','ECS','Kubernetes','AEM','CI/CD','GitHub Actions','Helm','Ansible','Terraform','Observability']
+      'sameAs':['https://www.linkedin.com/in/avenash','https://github.com/vavenash'],
+      'worksFor':{'@type':'Organization','name':'Capgemini'},
+      'knowsAbout':['AWS','ECS','Kubernetes','CI/CD','GitHub Actions','Terraform','Observability','Amazon Bedrock','RAG','Claude Agent SDK','LangGraph','AgentOps','MCP']
     };
     const s = document.createElement('script');
     s.type = 'application/ld+json';
     s.textContent = JSON.stringify(ld);
     document.head.appendChild(s);
-  
-    // --- Simple SPA Router ---
-    const routes = ['home','blog'];
+
+    // SPA Router
+    const routes = ['home','projects','blog'];
+    const routeTitles = {
+      home: 'Avenash Vasant — Platform Engineer | Agentic AI',
+      projects: 'AI Projects — Avenash Vasant',
+      blog: 'Blog — Avenash Vasant'
+    };
     function showRoute(route){
       routes.forEach(r => {
         const el = document.getElementById(r);
@@ -378,14 +475,14 @@
         if(r === route){ el.classList.remove('hidden'); link.classList.add('active'); }
         else { el.classList.add('hidden'); link.classList.remove('active'); }
       });
-      if(route === 'home'){ document.title = 'Avenash Vasant — Cloud/DevOps Architect'; }
-      if(route === 'blog'){ document.title = 'Blog — Avenash Vasant'; }
+      document.title = routeTitles[route] || routeTitles.home;
     }
-    function getRoute(){ const h = (location.hash || '#home').replace('#',''); return routes.includes(h)?h:'home'; }
+    function getRoute(){
+      const h = (location.hash || '#home').replace('#','');
+      return routes.includes(h) ? h : 'home';
+    }
     window.addEventListener('hashchange', () => showRoute(getRoute()));
-    // Initialize route on load
     showRoute(getRoute());
-
-</script>
+  </script>
 </body>
 </html>
